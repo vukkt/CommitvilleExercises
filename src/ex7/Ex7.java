@@ -8,6 +8,12 @@ public class Ex7 {
 		// TODO Auto-generated method stub
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Input a number: ");
+		int number = scanner.nextInt();
+
+		for (int i = 1; i < 11; i++) {
+			int result = i * number;
+			System.out.println(number + " x " + i + " = " + result);
+		}
 	}
 
 }
