@@ -12,8 +12,6 @@ public class Ex61 {
 
 		String input = scanner.nextLine();
 
-		input = input.trim();
-
 		char[] array = input.toCharArray();
 
 		for (int i = array.length - 1; i >= 0; i--) {
