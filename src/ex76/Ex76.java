@@ -12,7 +12,7 @@ public class Ex76 {
 		ArrayList<Integer> array = new ArrayList<Integer>();
 		ArrayList<Integer> array2 = new ArrayList<Integer>();
 
-		System.out.println("please enter 5 elements of the first array");
+		System.out.println("Please enter 5 elements of the first array: ");
 
 		int first = scanner.nextInt();
 		int second = scanner.nextInt();
@@ -26,7 +26,9 @@ public class Ex76 {
 		array.add(fourth);
 		array.add(fifth);
 
-		System.out.println("please enter 5 elements of the second array");
+		System.out.println("Succesfully created first array of 5 elements :" + array + "\n");
+
+		System.out.println("Please enter 5 elements of the second array: ");
 
 		int first2 = scanner.nextInt();
 		int second2 = scanner.nextInt();
@@ -34,14 +36,15 @@ public class Ex76 {
 		int fourth2 = scanner.nextInt();
 		int fifth2 = scanner.nextInt();
 
-		array.add(first2);
-		array.add(second2);
-		array.add(third2);
-		array.add(fourth2);
-		array.add(fifth2);
+		array2.add(first2);
+		array2.add(second2);
+		array2.add(third2);
+		array2.add(fourth2);
+		array2.add(fifth2);
 
-		System.out.println("Succesfully created an array of 5 elements :" + array);
-		if (Integer.valueOf(first).equals(fifth)) {
+		System.out.println("Succesfully created second array of 5 elements :" + array2 + "\n");
+
+		if (Integer.valueOf(first).equals(first2) && Integer.valueOf(fifth).equals(fifth2)) {
 			System.out.println("true");
 
 		} else {
