@@ -24,7 +24,7 @@ public class Ex75 {
 		array.add(third);
 		array.add(fourth);
 		array.add(fifth);
-		System.out.println("Succesfully created an array " + array);
+		System.out.println("Succesfully created an array of 5 elements :" + array);
 		if (Integer.valueOf(first).equals(fifth)) {
 			System.out.println("true");
 
