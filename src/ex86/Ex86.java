@@ -19,6 +19,6 @@ public class Ex86 {
 			}
 		}
 		System.out.println(ctr);
-		in.close();
+		scanner.close();
 	}
 }
