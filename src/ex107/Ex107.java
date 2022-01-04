@@ -1,33 +1,26 @@
 package ex107;
 
-import java.util.ArrayList;
-import java.util.Scanner;
+import java.util.Arrays;
 
 public class Ex107 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		ArrayList<Integer> array = new ArrayList<Integer>();
+		int[] array_nums = { 11, 12, 13, 14, 45, 20 };
+		System.out.println("Original Array: " + Arrays.toString(array_nums));
+		int result = 1;
 
-		Scanner scanner = new Scanner(System.in);
+		for (int i = 0; i <= array_nums.length - 3; i++) {
+			if (array_nums[i] + 1 == array_nums[i + 1] && array_nums[i + 1] + 1 == array_nums[i + 2])
+				result = 0;
+		}
 
-		System.out.println("Please enter 5 elements of the array: ");
-
-		int firstElement = scanner.nextInt();
-		int secondElement = scanner.nextInt();
-		int thirdElement = scanner.nextInt();
-		int fourthElement = scanner.nextInt();
-		int fifthElement = scanner.nextInt();
-
-		array.add(firstElement);
-		array.add(secondElement);
-		array.add(thirdElement);
-		array.add(fourthElement);
-		array.add(fifthElement);
-
-		System.out.println("You've succesfully added 5 elements into the array: " + array);
-
+		if (result == 1) {
+			System.out.printf(String.valueOf(false));
+		} else {
+			System.out.printf(String.valueOf(true));
+		}
+		System.out.printf("\n");
 	}
-
 }
