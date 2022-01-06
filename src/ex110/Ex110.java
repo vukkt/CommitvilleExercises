@@ -8,9 +8,9 @@ public class Ex110 {
 		// TODO Auto-generated method stub
 
 		int test = 0;
-		Scanner in = new Scanner(System.in);
+		Scanner scanner = new Scanner(System.in);
 		System.out.print("Input a positive integer: ");
-		int n = in.nextInt();
+		int n = scanner.nextInt();
 		if (n < 1) {
 			System.out.print(Boolean.toString(false));
 			test = 1;
